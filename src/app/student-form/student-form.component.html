@@ -1,0 +1,31 @@
+
+     <div class="col-md-12">
+      <!-- <button (click)="addEmp()" class="btn btn-info"> Add Employee</button>     -->
+    <h2> User Details</h2>  
+    <div class="table-responsive table-container">  
+      <table class="table" >  
+        <thead>  
+          <tr>  
+            <th>Item</th>  
+            <th>Amount</th>  
+            <th>Category</th>  
+            <th>Location</th>  
+            <th>View</th>  
+          </tr>  
+        </thead>  
+        <tbody>  
+          <tr *ngFor="let el of user">  
+            <td class="hidden">{{el.item}}</td>  
+            <td>{{el.amount}}</td>  
+            <td>{{el.category}}</td>  
+            <td>{{el.location}}</td> 
+            <td>{{el.view}}</td>   
+            <td>  
+  
+              <button (click)="editEmp(el)" style="margin-left: 20px;" class="btn btn-info"> Edit</button>  
+            </td>  
+          </tr>  
+        </tbody>  
+      </table>  
+    </div>  
+  </div> 
